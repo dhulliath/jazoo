@@ -1,0 +1,21 @@
+{{#>wrapper}}
+{{#each locations}}
+    <div class="location" itemscope itemtype="http://schema.org/LocalBusiness">
+        <div class="name">{{name}}</div>
+        <div class="servicearea">{{service_area}}</div>
+        <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">{{address.address}}</span>
+            <span itemprop="addressLocality">{{address.city}}</span>
+            <span itemprop="addressRegion">{{address.region.region}}</span>
+            <span itemprop="postalCode">{{address.postal_code}}</span>
+        </div>
+        <div class="contact">
+            <span itemprop="telephone">{{contact.phone}}</span>
+            <span itemprop="email">{{contact.email}}</span>
+        </div>
+        <div class="details">
+            <span>{{details.depot_type}}</span>
+        </div>
+    </div>
+{{/each}}
+{{/wrapper}}

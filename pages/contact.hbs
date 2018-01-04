@@ -1,0 +1,9 @@
+{{#>wrapper}}
+{{#each contacts}}
+<div>
+    <h3>{{name}}</h3>
+    {{#if email}}<a href="mailto:{{email}}">{{email}}</a>{{/if}}
+    {{#if phone}}{{phone}}{{/if}}
+</div>
+{{/each}}
+{{/wrapper}}
