@@ -1,0 +1,17 @@
+{
+  "name": "courier_scaffolding",
+  "version": "1",
+  "description": "",
+  "main": "assets/vendor/enduro/index.js",
+  "scripts": {
+    "start": "node_modules/.bin/enduro start"
+  },
+  "author": "Peter Olejniczak",
+  "license": "Private",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "enduro": "*",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.9"
+  }
+}
