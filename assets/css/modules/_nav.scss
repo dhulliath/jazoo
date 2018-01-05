@@ -1,20 +1,21 @@
 nav {
-    background-color: #333;
+    background-color: $color-dark;
     overflow: hidden;
+    line-height: #{$nav-height}
 }
 
 nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: $color-accent;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 12px;
     text-decoration: none;
     font-size: 17px;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: $color-accent;
     color: black;
 }
 
@@ -27,7 +28,7 @@ nav .icon {
     display: none
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-view-threshold) {
   nav a:not(:first-child) {display: none;}
   nav a.icon {
     float: right;
@@ -35,7 +36,7 @@ nav .icon {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-view-threshold) {
   nav.responsive {position: relative;}
   nav.responsive a.icon {
     position: absolute;

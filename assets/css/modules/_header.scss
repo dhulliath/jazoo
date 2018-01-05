@@ -1,0 +1,35 @@
+.page-header {
+    position: relative;
+    z-index:30;
+    display: block;
+    padding: none;
+    margin: none;
+    height: 20vw;
+    max-height: #{$header-height};
+    width: 100%;
+    overflow: hidden;
+}
+.page-header img {
+    position: absolute;
+    width: 100vw;
+    /*height: 20vw;
+    max-height: $header-height;*/
+    margin: 0px;
+}
+.page-header header {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    width: 100vw;
+    bottom: 1vh;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 4px #eee, 0 0 6px #ddd;
+}
+
+@media screen and (max-width: $mobile-view-threshold) {
+    .page-header {
+        display: none;
+    }
+}

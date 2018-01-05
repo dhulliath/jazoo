@@ -3,9 +3,14 @@
     <head>
         <title>{{global.site.title}}</title>
         <link rel="stylesheet" href="/assets/css/main.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex" />
     </head>
     <body>
+        <div class="page-header">
+            <img src="{{global.header.image}}">
+            <header>{{global.site.title}}</header>
+        </div>
         <nav>
             {{#each global.navigation.items}}
             <a href="{{url}}">{{title}}</a>
@@ -15,6 +20,7 @@
         <article>
 {{>@partial-block}}
         </article>
+        <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
 {{!-- <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
     </body>
 </html>

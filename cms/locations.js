@@ -11,15 +11,9 @@
 			region: 'SK'
 		}
 	},
-	$depot_type_hidden: true,
-	depot_type: {
-		warehouse: 'Warehouse',
-		dropoff: 'Storage Locker'
-	},
-	$location_type_hidden: true,
-	location_type: {
-		location: {
-			name: '',
+	$warehouse_type_hidden: true,
+	warehouse_type: {
+		warehouse: {
 			$service_area_type: 'textarea',
 			service_area: '',
 			$address_size: 4,
@@ -37,16 +31,69 @@
 				email: ''
 			},
 			$details_size: 4,
+			$details_noframe: true,
 			details: {
-				depot_type: '@@depot_type.warehouse'
+				$warehouse_hidden: true,
+				warehouse: 'warehouse'
 			}
 		}
 	},
-	$locations_size: 12,
-	$locations_templatitator: '@@location_type',
-	locations: [
+	$depot_type_hidden: true,
+	depot_type: {
+		depot: {
+			$service_area_type: 'textarea',
+			service_area: '',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: '',
+				city: '',
+				region: '@@regionlist.alberta',
+				postal_code: ''
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				depot_host: '',
+				$depot_hidden: true,
+				depot: 'depot'
+			}
+		}
+	},
+	$warehouses_size: 12,
+	$warehouses_templatitator: '@@warehouse_type',
+	warehouses: [
 		{
-			name: 'Jazoo Edmonton',
+			$service_area_type: 'textarea',
+			service_area: '',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: 'Bay 9, 1435 40 Avenue NW',
+				city: 'Calgary',
+				region: '@@regionlist.alberta',
+				postal_code: 'T2E 8N6'
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '(403) 660-5504',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				$warehouse_hidden: true,
+				warehouse: 'warehouse'
+			}
+		},
+		{
 			$service_area_type: 'textarea',
 			service_area: 'North of Red Deer, south of Lac la Biche.',
 			$address_size: 4,
@@ -64,37 +111,19 @@
 				email: ''
 			},
 			$details_size: 4,
+			$details_noframe: true,
 			details: {
-				depot_type: '@@depot_type.warehouse'
+				$warehouse_hidden: true,
+				warehouse: 'warehouse'
 			}
-		},
+		}
+	],
+	$depots_size: 12,
+	$depots_templatitator: '@@depot_type',
+	depots: [
 		{
-			name: 'Jazoo Calgary',
 			$service_area_type: 'textarea',
-			service_area: '',
-			$address_size: 4,
-			$address_noframe: true,
-			address: {
-				address: 'Bay 9, 1435 40 Avenue NE',
-				city: 'Calgary',
-				region: '@@regionlist.alberta',
-				postal_code: 'T2E 8N6'
-			},
-			$contact_size: 4,
-			$contact_noframe: true,
-			contact: {
-				phone: '(403) 660-5504',
-				email: ''
-			},
-			$details_size: 4,
-			details: {
-				depot_type: '@@depot_type.warehouse'
-			}
-		},
-		{
-			name: 'Maxim Self Storage',
-			$service_area_type: 'textarea',
-			service_area: '',
+			service_area: 'Grande Prairie, Fort St. John',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -106,12 +135,90 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '',
+				phone: '(587) 297-8406',
 				email: ''
 			},
 			$details_size: 4,
+			$details_noframe: true,
 			details: {
-				depot_type: '@@depot_type.dropoff'
+				depot_host: 'Maxim Self Storage',
+				$depot_hidden: true,
+				depot: 'depot'
+			}
+		},
+		{
+			$service_area_type: 'textarea',
+			service_area: '',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: '355 MacAlpine Crescent',
+				city: 'Fort McMurray',
+				region: '@@regionlist.alberta',
+				postal_code: 'T9H 4Y4'
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '(587) 645-6364',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				depot_host: 'Sentinel Storage',
+				$depot_hidden: true,
+				depot: 'depot'
+			}
+		},
+		{
+			$service_area_type: 'textarea',
+			service_area: '',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: '6740 Johnstone Drive',
+				city: 'Red Deer',
+				region: '@@regionlist.alberta',
+				postal_code: 'T4P 3Y2'
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '(403) 660-5504',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				depot_host: 'U-Store-It',
+				$depot_hidden: true,
+				depot: 'depot'
+			}
+		},
+		{
+			$service_area_type: 'textarea',
+			service_area: '',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: 'PO Box 12525',
+				city: 'Lloydminster',
+				region: '@@regionlist.alberta',
+				postal_code: ''
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '(780) 903-3628',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				depot_host: 'Lloydminster Storage Ltd',
+				$depot_hidden: true,
+				depot: 'depot'
 			}
 		}
 	]

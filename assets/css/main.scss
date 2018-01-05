@@ -1,2 +1,33 @@
-@import 'modules/nav';
+$gutters: 20px;
+$element-margin: 5px;
+$border-width: 2px;
+$border-width-image: 1px;
+$border-round: 8px;
+$nav-height: '60px';
+$header-height: '200px';
+$mobile-view-threshold: '600px';
 
+@import 'modules/colors';
+@import 'modules/mixins';
+
+body {
+    margin: 0;
+    background-color: #888;
+    background-repeat: repeat;
+}
+
+article {
+    background-color: $color-light;
+    padding: $gutters;
+    min-height: calc(100vh - #{$nav-height} - #{$header-height} - #{$gutters * 2});
+    @include respond-to-min('medium') {
+        max-width: 992px;
+        margin: auto;
+    }
+}
+
+@import 'modules/nav';
+@import 'modules/locations';
+@import 'modules/header';
+@import 'modules/font';
+@import 'modules/depthshading';

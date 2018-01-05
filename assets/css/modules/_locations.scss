@@ -1,0 +1,39 @@
+.location {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.location .name {
+    display: block;
+    font-size: 2em;
+}
+
+.location .details {
+    display: table;
+    width: 100%;
+}
+
+.location .address, .location .contact, .location .servicearea {
+    display: table-cell;
+}
+
+.location .servicearea {
+    width: 50%;
+}
+
+.location .address, .location .contact {
+    width: 25%;
+}
+
+@media screen and (max-width: $mobile-view-threshold) {
+    .location .details {
+        display: block;
+        width: 100%;
+    }
+    .location .address, .location .contact, .location .servicearea {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+}

@@ -10,7 +10,7 @@ require.config({
 require(['jquery'], function ($) {
 	$(document).ready(function () {
 		console.log('requirejs ready to use')
-		$('nav a.icon').onClick(function() {
+		$('nav a.icon').click(function() {
 			$('nav').toggleClass('responsive');
 		})
 	})
