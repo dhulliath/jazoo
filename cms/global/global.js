@@ -1,6 +1,6 @@
 {
 	site: {
-		title: 'Courier'
+		title: 'Jazoo Express Courier Ltd'
 	},
 	header: {
 		$image_type: 'image',
@@ -16,10 +16,6 @@
 		},
 		$items_templatitator: '@@navigation.navitem_types',
 		items: [
-			{
-				title: 'News',
-				url: '/news/'
-			},
 			{
 				title: 'Locations',
 				url: '/locations/'

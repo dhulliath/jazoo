@@ -24,6 +24,16 @@
 				marked_doc: '<p>Jazoo offers hotshot services across Alberta at a rate of $1.85 per Kilometer, only while your cargo is loaded!</p>\n',
 				contents: []
 			}
+		},
+		{
+			title: 'Regular Routes',
+			$doc_type: 'textarea',
+			doc: 'Jazoo offers daily routes between all of our locations. Service between Edmonton and Calgary operates twice daily.',
+			$abstracted_content_hidden: true,
+			abstracted_content: {
+				marked_doc: '<p>Jazoo offers daily routes between all of our locations. Service between Edmonton and Calgary operates twice daily.</p>\n',
+				contents: []
+			}
 		}
 	]
 }

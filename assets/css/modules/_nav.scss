@@ -14,6 +14,15 @@ nav a {
     font-size: 17px;
 }
 
+nav a img {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+nav a:first-child {
+  line-height:0px;
+}
+
 nav a:hover {
     background-color: $color-accent;
     color: black;
