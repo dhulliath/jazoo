@@ -9,9 +9,7 @@
   "author": "Peter Olejniczak",
   "license": "Private",
   "dependencies": {
-    "bluebird": "^3.5.1",
     "enduro": "*",
-    "lodash": "^4.17.4",
     "marked": "^0.3.9"
   }
 }
