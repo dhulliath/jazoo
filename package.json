@@ -9,7 +9,7 @@
   "author": "Peter Olejniczak",
   "license": "Private",
   "dependencies": {
-    "enduro": "<1.4.43",
+    "enduro": "1.4.42",
     "marked": "^0.3.9"
   }
 }
