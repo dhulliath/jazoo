@@ -2,48 +2,62 @@
 <span itemscope itemtype="http://schema.org/Organization">
 <span itemprop="name" content="Jazoo Express Courier Ltd"></span>
 <span itemprop="url" content="http://www.jazoocourier.com/"></span>
-{{#each warehouses}}
-<div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
-    <div class="name">{{address.city}}</div>
-    <div class="details">
+<a name="locations"></a>
+    <div class="header">Locations</div>
+    {{#each warehouses}}
+    <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
+        <div class="name">{{address.city}}</div>
+        <div class="details">
+            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">{{address.address}}</span><br/>
+                <span itemprop="addressLocality">{{address.city}}</span>,
+                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
+                <span itemprop="postalCode">{{address.postal_code}}</span>
+                <span itemprop="addressCountry" content="CA"></span>
+            </div>
+            <div class="contact">
+                Dispatch Number: <span itemprop="telephone"><a href="tel:+{{contact.phone}}">{{contact.phone}}</a></span><br/>
+                {{#if contact.email}}<span itemprop="email"><a href="mailto:{{contact.email}}">{{contact.email}}</a></span>{{/if}}
+            </div>
+        </div>
         {{#if service_area}}<div class="servicearea">{{service_area}}</div>{{/if}}
-        <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">{{address.address}}</span><br/>
-            <span itemprop="addressLocality">{{address.city}}</span>,
-            <span itemprop="addressRegion">{{address.region.region}}</span><br/>
-            <span itemprop="postalCode">{{address.postal_code}}</span>
-            <span itemprop="addressCountry" content="CA"></span>
-        </div>
-        <div class="contact">
-            Dispatch: <span itemprop="telephone">{{contact.phone}}</span><br/>
-            <span itemprop="email">{{contact.email}}</span>
-        </div>
     </div>
-</div>
-{{/each}}
+    {{/each}}
 
-{{#each depots}}
-<div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
-    <div class="name">{{address.city}}</div>
-    <div class="details">
+    <a name="depots"></a>
+    <div class="header">Depots</div>
+    {{#each depots}}
+    <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
+        <div class="name">{{address.city}}</div>
+        <div class="details">
+            
+            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">{{address.address}}</span><br/>
+                <span itemprop="addressLocality">{{address.city}}</span>,
+                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
+                <span itemprop="postalCode">{{address.postal_code}}</span>
+                <span itemprop="addressCountry" content="CA"></span>
+            </div>
+            <div class="contact">
+                Dispatch Number: <span itemprop="telephone"><a href="tel:+{{contact.phone}}">{{contact.phone}}</a></span><br/>
+                {{#if contact.email}}<span itemprop="email"><a href="mailto:{{contact.email}}">{{contact.email}}</a></span>{{/if}}
+            </div>
+        </div>
         <div class="servicearea">
             {{#if service_area}}{{service_area}}<br/>{{/if}}
             Facilities provided by: <em>{{details.depot_host}}</em><br/>
             Please call for access details.
         </div>
-        <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">{{address.address}}</span><br/>
-            <span itemprop="addressLocality">{{address.city}}</span>,
-            <span itemprop="addressRegion">{{address.region.region}}</span><br/>
-            <span itemprop="postalCode">{{address.postal_code}}</span>
-            <span itemprop="addressCountry" content="CA"></span>
-        </div>
-        <div class="contact">
-            Dispatch: <span itemprop="telephone">{{contact.phone}}</span><br/>
-            <span itemprop="email">{{contact.email}}</span>
-        </div>
     </div>
-</div>
-{{/each}}
+    {{/each}}
+    <a name="contacts"></a>
+    <div class="header">Contacts</div>
+    {{#each contacts}}
+    <div class="contact">
+        <div class="name">{{name}}</div>
+        {{#if email}}<a href="mailto:{{email}}">{{email}}</a>{{/if}}
+        {{#if phone}}<br/>{{phone}}{{/if}}
+    </div>
+    {{/each}}
 </span>
 {{/wrapper}}

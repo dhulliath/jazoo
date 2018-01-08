@@ -7,7 +7,7 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: $color-accent;
+    color: white;
     text-align: center;
     padding: 0px 12px;
     text-decoration: none;
@@ -15,26 +15,29 @@ nav a {
 }
 
 nav a img {
-  height: 50px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 nav a:first-child {
   line-height:0px;
 }
 
 nav a:hover {
-    background-color: $color-accent;
-    color: black;
+    background-color: #000;
+    color: white;
 }
 
 nav a.active {
-    background-color: #4CAF50;
+    background-color: $color-accent;
     color: white;
 }
 
 nav .icon {
-    display: none
+    display: none;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.6em;
 }
 
 @media screen and (max-width: $mobile-view-threshold) {
@@ -51,6 +54,7 @@ nav .icon {
     position: absolute;
     right: 0;
     top: 0;
+    color: white;
   }
   nav.responsive a {
     float: none;

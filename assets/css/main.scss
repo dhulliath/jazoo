@@ -10,10 +10,19 @@ $mobile-view-threshold: '600px';
 @import 'modules/colors';
 @import 'modules/mixins';
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
-    background-color: #888;
+    background-color: #000;
     background-repeat: repeat;
+}
+
+
+hr {
+    border-width: 2px;
 }
 
 article {
@@ -38,3 +47,4 @@ article {
 @import 'modules/font';
 @import 'modules/depthshading';
 @import 'modules/waybill';
+@import 'modules/contacts';

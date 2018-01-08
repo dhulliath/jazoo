@@ -17,12 +17,20 @@
 		$items_templatitator: '@@navigation.navitem_types',
 		items: [
 			{
-				title: 'Locations',
-				url: '/#locations'
+				title: 'About',
+				url: '/about/'
 			},
 			{
-				title: 'Contact',
-				url: '/#contacts'
+				title: 'Contacts',
+				url: '/contact/'
+			},
+			{
+				title: 'Locations',
+				url: '/locations/'
+			},
+			{
+				title: 'Rates',
+				url: '/assets/img/jazoo_servicerates_2018.pdf'
 			},
 			{
 				title: 'Waybill',

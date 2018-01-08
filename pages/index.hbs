@@ -1,68 +1,24 @@
-{{#>wrapper}}
-<span itemscope itemtype="http://schema.org/Organization">
-    <span itemprop="name" content="Jazoo Express Courier Ltd"></span>
-    <span itemprop="url" content="http://www.jazoocourier.com/"></span>
-    <div class="intro">
-        {{{abstracted_content.marked_doc}}}
-    </div>
-
-    <a name="locations"></a>
-    <div class="header">Locations</div>
-    {{#each warehouses}}
-    <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
-        <div class="name">{{address.city}}</div>
-        <div class="details">
-            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">{{address.address}}</span><br/>
-                <span itemprop="addressLocality">{{address.city}}</span>,
-                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
-                <span itemprop="postalCode">{{address.postal_code}}</span>
-                <span itemprop="addressCountry" content="CA"></span>
-            </div>
-            <div class="contact">
-                Dispatch: <span itemprop="telephone">{{contact.phone}}</span><br/>
-                {{#if contact.email}}<span itemprop="email"><a href="mailto:{{contact.email}}">{{contact.email}}</a></span>{{/if}}
-            </div>
-        </div>
-        {{#if service_area}}<div class="servicearea">{{service_area}}</div>{{/if}}
-    </div>
-    {{/each}}
-
-    <a name="depots"></a>
-    <div class="header">Depots</div>
-    {{#each depots}}
-    <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
-        <div class="name">{{address.city}}</div>
-        <div class="details">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{global.site.title}}</title>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex" />
+    </head>
+    <body>
+        <section class="landing" style="color: white; font-size: 1em; padding:1em; text-align:center;">
+            <a href="/about/"><img style="width: 300px;" src="/assets/img/jazoo.png"></a>
+             {{{abstracted_content.marked_doc}}}
+        </section>
+        <nav class="responsive" style="align:center;">
+            <a></a>
+            {{#each global.navigation.items}}
+            <a href="{{url}}">{{title}}</a>
+            {{/each}}
             
-            <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">{{address.address}}</span><br/>
-                <span itemprop="addressLocality">{{address.city}}</span>,
-                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
-                <span itemprop="postalCode">{{address.postal_code}}</span>
-                <span itemprop="addressCountry" content="CA"></span>
-            </div>
-            <div class="contact">
-                Dispatch: <span itemprop="telephone">{{contact.phone}}</span><br/>
-                {{#if contact.email}}<span itemprop="email"><a href="mailto:{{contact.email}}">{{contact.email}}</a></span>{{/if}}
-            </div>
-        </div>
-        <div class="servicearea">
-            {{#if service_area}}{{service_area}}<br/>{{/if}}
-            Facilities provided by: <em>{{details.depot_host}}</em><br/>
-            Please call for access details.
-        </div>
-    </div>
-    {{/each}}
-
-    <a name="contacts"></a>
-    <div class="header">Contacts</div>
-    {{#each contacts}}
-    <div class="contact">
-        <div class="name">{{name}}</div>
-        {{#if email}}<a href="mailto:{{email}}">{{email}}</a>{{/if}}
-        {{#if phone}}<br/>{{phone}}{{/if}}
-    </div>
-    {{/each}}
-</span>
-{{/wrapper}}
+        </nav>
+        <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+{{!-- <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
+    </body>
+</html>

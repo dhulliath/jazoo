@@ -83,8 +83,8 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(403) 660-5504',
-				email: ''
+				phone: '1-403-660-5504',
+				email: 'calgary.operations@jazoocourier.com'
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -95,7 +95,7 @@
 		},
 		{
 			$service_area_type: 'textarea',
-			service_area: 'North of Red Deer, south of Lac la Biche.',
+			service_area: '',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -107,8 +107,8 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(780) 903-3628',
-				email: ''
+				phone: '1-780-903-3628',
+				email: 'edmonton.operations@jazoocourier.com'
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -123,7 +123,7 @@
 	depots: [
 		{
 			$service_area_type: 'textarea',
-			service_area: 'Grande Prairie, Fort St. John',
+			service_area: '',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -135,8 +135,8 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(587) 297-8406',
-				email: ''
+				phone: '1-587-297-8406',
+				email: 'gp.operations@jazoocourier.com'
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -160,8 +160,8 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(587) 645-6364',
-				email: ''
+				phone: '1-587-645-6364',
+				email: 'fortmac.operations@jazoocourier.com'
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -185,7 +185,7 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(403) 660-5504',
+				phone: '1-403-660-5504',
 				email: ''
 			},
 			$details_size: 4,
@@ -210,7 +210,7 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '(780) 903-3628',
+				phone: '1-780-903-3628',
 				email: ''
 			},
 			$details_size: 4,
@@ -220,6 +220,22 @@
 				$depot_hidden: true,
 				depot: 'depot'
 			}
+		}
+	],
+	$contact_types_hidden: true,
+	contact_types: {
+		contact: {
+			name: '',
+			phone: '',
+			email: ''
+		}
+	},
+	$contacts_templatitator: '@@contact_types',
+	contacts: [
+		{
+			name: 'Accounting',
+			phone: '',
+			email: 'accounting@jazoocourier.com'
 		}
 	]
 }
