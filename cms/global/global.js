@@ -18,15 +18,15 @@
 		items: [
 			{
 				title: 'Locations',
-				url: '/locations/'
-			},
-			{
-				title: 'Services',
-				url: '/services/'
+				url: '/#locations'
 			},
 			{
 				title: 'Contact',
-				url: '/contact/'
+				url: '/#contacts'
+			},
+			{
+				title: 'Waybill',
+				url: '/waybill/'
 			}
 		]
 	}

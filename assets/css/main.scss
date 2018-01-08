@@ -26,8 +26,15 @@ article {
     }
 }
 
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
 @import 'modules/nav';
 @import 'modules/locations';
 @import 'modules/header';
 @import 'modules/font';
 @import 'modules/depthshading';
+@import 'modules/waybill';

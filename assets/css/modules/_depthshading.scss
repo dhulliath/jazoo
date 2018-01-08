@@ -1,3 +1,4 @@
+@media not print {
 article:before {
     content: "";
     position: absolute;
@@ -17,4 +18,5 @@ nav {
 article {
     z-index: 10;
     position: relative;
+}
 }

@@ -1,0 +1,117 @@
+$cell-height: 1.5em;
+$columns: ( (0%, 85%), (15%, 60%));
+
+
+.wbill {
+    border-spacing: 0px;
+    border-collapse: separate;
+    input {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.75em;
+    }
+    textarea {
+        display: block;
+        margin: auto;
+        width: 100%;
+        font-size: 1em;
+        padding: 5px 0;
+        line-height: 1.75em;
+        background-image: linear-gradient(#555 1px, transparent 1px);
+        background-size: 100% 1.75em;
+        border: 0;
+        outline: 0;
+        resize: none;
+    }
+    thead {
+        td {
+            text-align: center;
+        }
+    }
+    tbody {
+        tr {
+            height: 2em;
+        }
+        tr:empty {
+            height: 0.5em;
+        }
+        tr.row-double {
+            height: 4em;
+        }
+        tr.row-quad {
+            height: 8em;
+        }
+        tr.row-hex {
+            height: 12em;
+        }
+
+        td, th {
+            border: 1px solid #000;
+        }
+        th:not(.deco-b) {
+            font-weight: normal;
+        }
+
+        th {
+            background-color:#ddd;
+        }
+        td {
+            background-color: #fff;
+        }
+
+        border: 1px solid #000;
+    }
+    .billheader {
+        img {
+            height: 95%;
+        }
+        vertical-align: middle;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+    }
+    .billfooter {
+        font-size: 1.25em;
+    }
+    .dispatches span:not(:first-child)::before {
+        content: " // ";
+    }
+}
+
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+    .wbill {
+        font-size: 0.75em;
+        max-height: 95vh;
+        input {
+            border: none;
+        }
+    }
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    article {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    nav,
+    .page-header {
+        display: none;
+    }
+}
+@media screen {
+    .wbill {
+        input, textarea {
+            outline: 2px greenyellow solid;
+        }
+    }
+}
+
