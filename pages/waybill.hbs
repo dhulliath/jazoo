@@ -1,6 +1,8 @@
 {{#>wrapper}}
     <div class="noprint">
         {{{description.abstracted_content.marked_doc}}}
+        <input type="button" value="Print this Waybill" onClick="window.print()">
+        <a href="/assets/img/waybill.pdf">Downloadable Waybill</a>
     </div>
     <table class="wbill">
         <col width="11%">
@@ -157,8 +159,4 @@
             </tr>
         </thead>
     </table>
-    
-    <section class="noprint">
-        <input type="button" value="Print this Waybill" onClick="window.print()">
-    </section>
 {{/wrapper}}
