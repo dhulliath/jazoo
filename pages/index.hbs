@@ -15,11 +15,15 @@
         </div>
     </div>
     <article>
-        <a href="/about/">
-            <svg viewBox="0 0 66.145832 30.427085" style="width: 300px;">
-                <use xlink:href="/assets/img/jazoo-logo.svg#jazoo-svg"></use>
-            </svg>
-        </a>
+        <svg viewBox="0 0 66.145832 30.427085" style="width: 300px;">
+            <defs>
+                <linearGradient id="truckFillGradient">
+                    <stop offset="5%" stop-color="black" />
+                    <stop offset="95%" stop-color="green" />
+                </linearGradient>
+            </defs>
+            <use xlink:href="/assets/img/jazoo-logo.svg#jazoo-svg"></use>
+        </svg>
         {{{abstracted_content.marked_doc}}}
     </article>
     <nav class="responsive" style="align:center;">

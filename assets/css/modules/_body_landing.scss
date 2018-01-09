@@ -13,7 +13,7 @@ body {
     bottom: 0;
     div {
         object-fit: cover;
-        background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%));
+        background: linear-gradient(135deg, darken(#ffd700, 0%), darken($color-accent, 15%));
         height:100%;
         width: 100%;
     }
@@ -26,6 +26,11 @@ article {
     font-size: 1em;
     padding: 1em;
     text-align: center;
+    svg {
+        stroke: $color-accent;
+        stroke-width: 0.5;
+        fill: url(#truckFillGradient);
+    }
 }
 
 nav {

@@ -12,6 +12,11 @@
             display: block;
             width: 100%;
         };
+        .contact {
+            .phone {
+                white-space: nowrap;
+            }
+        }
     }
     .address,
     .contact {
