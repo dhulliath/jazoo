@@ -13,6 +13,9 @@ header {
     text-align: center;
     text-shadow: 0 0 4px #eee, 0 0 6px #ddd;
     vertical-align: bottom;
+    @include viewPrinter() {
+        display: none;
+    }
 }
 
 article {
@@ -33,5 +36,8 @@ article {
     filter: blur(5px);
     * {
         object-fit: cover;
+    }
+    @include viewPrinter() {
+        display: none;
     }
 }
