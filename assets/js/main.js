@@ -13,5 +13,13 @@ require(['jquery'], function ($) {
 		$('nav a.icon').click(function() {
 			$('nav').toggleClass('responsive');
 		})
+		var stickyTop = $('nav').offset().top;
+		$(window).scroll( function() {
+			if ($(window).scrollTop() >= stickyTop) {
+				$('nav').addClass('sticky');
+			} else {
+				$('nav').removeClass('sticky');
+			}
+		})
 	})
 })

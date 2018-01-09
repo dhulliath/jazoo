@@ -1,0 +1,59 @@
+$color-nav: $color-dark;
+
+body {
+    
+}
+
+.pagebg {
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    div {
+        object-fit: cover;
+        background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%));
+        height:100%;
+        width: 100%;
+    }
+}
+
+article {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: $color-nav;
+    overflow: hidden;
+    line-height: #{$nav-height};
+    position: relative;
+    max-width: $view-mobile-threshold;
+    margin: auto;
+    border-radius: 10px;
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0px 12px;
+        text-decoration: none;
+        font-size: 18px;
+        float: none;
+        border: 1px solid $color-nav;
+        border-radius: 5px;
+    }
+    a:hover {
+        background-color: $color-nav;
+        color: white;
+        border: 1px solid $color-accent;
+    }
+    a.active {
+        background-color: $color-accent;
+        color: white;
+    }
+}

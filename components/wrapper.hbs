@@ -7,16 +7,24 @@
         <meta name="robots" content="noindex" />
     </head>
     <body>
-        <div class="page-header">
+        <div class="pagebg">
             <img src="/assets/img/header.jpg">
-            <header>{{global.site.title}}</header>
         </div>
+        <header>
+            <span>
+                {{global.site.title}}
+            </span>
+        </header>
         <nav>
-            <a href="/"><img src="/assets/img/jazoo.gif"></a>
+            <a href="/">
+            <svg viewBox="0 0 66.145832 30.427085">
+                <use xlink:href="/assets/img/jazoo-logo.svg#jazoo-svg"></use>
+            </svg>
+            </a>
             {{#each global.navigation.items}}
             <a href="{{url}}">{{title}}</a>
             {{/each}}
-            <a href="#" class="icon">&#9776;</a>
+            <a href="javascript:void();" class="icon">&#9776;</a>
         </nav>
         <article>
 {{>@partial-block}}

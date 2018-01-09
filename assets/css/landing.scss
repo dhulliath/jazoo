@@ -5,17 +5,16 @@ $border-width-image: 1px;
 $border-round: 8px;
 $nav-height: '60px';
 $header-height: '200px';
-$article-width-max: 900px;
+$mobile-view-threshold: '600px';
 
 @import 'modules/colors';
 @import 'modules/mediaq';
 
-@import 'modules/body_main';
+body {
+    margin: 0;
+    background-color: #000;
+    background-repeat: repeat;
+}
 
-@import 'modules/nav_main';
-
-@import 'modules/locations';
+@import 'modules/body_landing';
 @import 'modules/font';
-@import 'modules/depthshading';
-@import 'modules/waybill';
-@import 'modules/contacts';

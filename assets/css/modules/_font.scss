@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Merriweather|Roboto');
-
 body {
     font-family: 'Merriweather', serif;
 }
@@ -8,7 +7,8 @@ nav {
     font-family: 'Dosis', sans-serif;
 }
 
-.wbill textarea, .wbill {
+.wbill textarea,
+.wbill {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,8 +26,27 @@ nav {
 }
 
 .al-right {
-        text-align: right;
+    text-align: right;
+}
+
+.al-center {
+    text-align: center;
+}
+
+.header {
+    padding-bottom: 0.15em;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border-width: 2px;
+}
+
+@media print {
+    .noprint {
+        display: none;
     }
-    .al-center {
-        text-align: center;
-    }
+}

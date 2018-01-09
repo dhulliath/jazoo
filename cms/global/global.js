@@ -17,8 +17,8 @@
 		$items_templatitator: '@@navigation.navitem_types',
 		items: [
 			{
-				title: 'About',
-				url: '/about/'
+				title: 'Services',
+				url: '/services/'
 			},
 			{
 				title: 'Contacts',
@@ -27,10 +27,6 @@
 			{
 				title: 'Locations',
 				url: '/locations/'
-			},
-			{
-				title: 'Rates',
-				url: '/assets/img/jazoo_servicerates_2018.pdf'
 			},
 			{
 				title: 'Waybill',

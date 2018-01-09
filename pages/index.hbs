@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{global.site.title}}</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noindex" />
-    </head>
-    <body>
-        <section class="landing" style="color: white; font-size: 1em; padding:1em; text-align:center;">
-            <a href="/about/"><img style="width: 300px;" src="/assets/img/jazoo.png"></a>
-             {{{abstracted_content.marked_doc}}}
-        </section>
-        <nav class="responsive" style="align:center;">
-            <a></a>
-            {{#each global.navigation.items}}
-            <a href="{{url}}">{{title}}</a>
-            {{/each}}
-            
-        </nav>
-        <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
-{{!-- <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
-    </body>
+
+<head>
+    <title>{{global.site.title}}</title>
+    <link rel="stylesheet" href="/assets/css/landing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex" />
+</head>
+
+<body>
+    <div class="pagebg">
+        <div>
+
+        </div>
+    </div>
+    <article>
+        <a href="/about/">
+            <svg viewBox="0 0 66.145832 30.427085" style="width: 300px;">
+                <use xlink:href="/assets/img/jazoo-logo.svg#jazoo-svg"></use>
+            </svg>
+        </a>
+        {{{abstracted_content.marked_doc}}}
+    </article>
+    <nav class="responsive" style="align:center;">
+        <a></a> {{#each global.navigation.items}}
+        <a href="{{url}}">{{title}}</a> {{/each}}
+
+    </nav>
+    <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+    {{!--
+    <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
+</body>
+
 </html>

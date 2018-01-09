@@ -1,43 +1,33 @@
 .location {
     margin-bottom: 2em;
     display: block;
-}
-
-.location .name {
-    display: block;
-    font-size: 1.5em;
-}
-
-.header {
-    padding-bottom: 0.15em;
-}
-
-.location .details {
-    display: table;
-    width: 100%;
-}
-
-.location .address, .location .contact {
-    display: table-cell;
-}
-
-.location .servicearea {
-    width: 100%;
-}
-
-.location .address, .location .contact {
-    width: 50%;
-}
-
-@media screen and (max-width: $mobile-view-threshold) {
-    .location .details {
+    .name {
         display: block;
-        width: 100%;
+        font-size: 1.5em;
     }
-    .location .address, .location .contact, .location .servicearea {
-        display: block;
+    .details {
+        display: table;
         width: 100%;
-        margin-bottom: 0.5em;
+        @include viewPhone() {
+            display: block;
+            width: 100%;
+        };
     }
-
+    .address,
+    .contact {
+        display: table-cell;
+        width: 50%;
+        @include viewPhone() {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5em;
+        };
+    }
+    .servicearea {
+        width: 100%;
+        @include viewPhone() {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+    }
 }
