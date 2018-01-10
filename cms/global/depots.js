@@ -11,11 +11,12 @@
 			region: 'SK'
 		}
 	},
-	$warehouse_type_hidden: true,
-	warehouse_type: {
+	$location_type_hidden: true,
+	location_type: {
 		warehouse: {
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Warehouse',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -34,15 +35,16 @@
 			$details_noframe: true,
 			details: {
 				$warehouse_hidden: true,
-				warehouse: 'warehouse'
+				warehouse: 'warehouse',
+				show_in_waybill: true,
+				show_in_contacts: true,
+				show_in_locations: true
 			}
-		}
-	},
-	$depot_type_hidden: true,
-	depot_type: {
+		},
 		depot: {
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -62,20 +64,49 @@
 			details: {
 				depot_host: '',
 				$depot_hidden: true,
-				depot: 'depot'
+				depot: 'depot',
+				show_in_waybill: false,
+				show_in_contacts: false,
+				show_in_locations: true
 			}
-		}
-	},
-	$warehouses_size: 12,
-	$warehouses_templatitator: '@@warehouse_type',
-	warehouses: [
-		{
-			$service_area_type: 'textarea',
-			service_area: '',
+		},
+		office: {
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Office',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: 'Bay 9, 1435 40 Avenue NW',
+				title: ''
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				$office_hidden: true,
+				office: 'office',
+				show_in_waybill: false,
+				show_in_contacts: true,
+				show_in_locations: false
+			}
+		}
+	},
+	$depots_size: 12,
+	$depots_templatitator: '@@location_type',
+	depots: [
+		{
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Warehouse',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: 'Bay 9 1435 40 Avenue NW',
 				city: 'Calgary',
 				region: '@@regionlist.alberta',
 				postal_code: 'T2E 8N6'
@@ -90,19 +121,23 @@
 			$details_noframe: true,
 			details: {
 				$warehouse_hidden: true,
-				warehouse: 'warehouse'
+				warehouse: 'warehouse',
+				show_in_waybill: true,
+				show_in_contacts: true,
+				show_in_locations: true
 			}
 		},
 		{
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Warehouse',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
 				address: '4525 101 Street NW',
 				city: 'Edmonton',
 				region: '@@regionlist.alberta',
-				postal_code: 'T6E 5C6'
+				postal_code: 'T6E5C6'
 			},
 			$contact_size: 4,
 			$contact_noframe: true,
@@ -114,16 +149,16 @@
 			$details_noframe: true,
 			details: {
 				$warehouse_hidden: true,
-				warehouse: 'warehouse'
+				warehouse: 'warehouse',
+				show_in_waybill: true,
+				show_in_contacts: true,
+				show_in_locations: true
 			}
-		}
-	],
-	$depots_size: 12,
-	$depots_templatitator: '@@depot_type',
-	depots: [
+		},
 		{
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -143,12 +178,16 @@
 			details: {
 				depot_host: 'Maxim Self Storage',
 				$depot_hidden: true,
-				depot: 'depot'
+				depot: 'depot',
+				show_in_waybill: true,
+				show_in_contacts: true,
+				show_in_locations: true
 			}
 		},
 		{
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -168,12 +207,16 @@
 			details: {
 				depot_host: 'Sentinel Storage',
 				$depot_hidden: true,
-				depot: 'depot'
+				depot: 'depot',
+				show_in_waybill: true,
+				show_in_contacts: true,
+				show_in_locations: true
 			}
 		},
 		{
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -193,12 +236,16 @@
 			details: {
 				depot_host: 'U-Store-It',
 				$depot_hidden: true,
-				depot: 'depot'
+				depot: 'depot',
+				show_in_waybill: false,
+				show_in_contacts: false,
+				show_in_locations: true
 			}
 		},
 		{
-			$service_area_type: 'textarea',
-			service_area: '',
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
@@ -218,24 +265,36 @@
 			details: {
 				depot_host: 'Lloydminster Storage Ltd',
 				$depot_hidden: true,
-				depot: 'depot'
+				depot: 'depot',
+				show_in_waybill: false,
+				show_in_contacts: false,
+				show_in_locations: true
 			}
-		}
-	],
-	$contact_types_hidden: true,
-	contact_types: {
-		contact: {
-			name: '',
-			phone: '',
-			email: ''
-		}
-	},
-	$contacts_templatitator: '@@contact_types',
-	contacts: [
+		},
 		{
-			name: 'Accounting',
-			phone: '',
-			email: 'accounting@jazoocourier.com'
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Office',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				title: 'Accounting Services'
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '1-403-771-5031',
+				email: 'accounting@jazoocourier.com'
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				$office_hidden: true,
+				office: 'office',
+				show_in_waybill: false,
+				show_in_contacts: true,
+				show_in_locations: false
+			}
 		}
 	]
 }

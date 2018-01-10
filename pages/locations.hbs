@@ -4,7 +4,9 @@
 <span itemprop="url" content="http://www.jazoocourier.com/"></span>
 <a name="locations"></a>
     <div class="header">Locations</div>
-    {{#each warehouses}}
+    {{#each global.depots}}
+    {{#if details.warehouse}}
+    {{#if details.show_in_locations}}
     <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
         <div class="name">{{address.city}}</div>
         <div class="details">
@@ -22,11 +24,15 @@
         </div>
         {{#if service_area}}<div class="servicearea">{{service_area}}</div>{{/if}}
     </div>
+    {{/if}}
+    {{/if}}
     {{/each}}
 
     <a name="depots"></a>
     <div class="header">Depots</div>
-    {{#each depots}}
+    {{#each global.depots}}
+    {{#if details.depot}}
+    {{#if details.show_in_locations}}
     <div class="location" itemprop="department" itemscope itemtype="http://schema.org/Organization">
         <div class="name">{{address.city}}</div>
         <div class="details">
@@ -49,6 +55,8 @@
             Please call for access details.
         </div>
     </div>
+    {{/if}}
+    {{/if}}
     {{/each}}
 </span>
 {{/wrapper}}
