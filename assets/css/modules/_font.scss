@@ -42,7 +42,9 @@ a {
 }
 
 hr {
-    border-width: 2px;
+    border: 0;
+    border-bottom: 1px solid darken($color-light, 35%);
+    border-top: 1px solid darken($color-light, 15%);
 }
 
 @media print {

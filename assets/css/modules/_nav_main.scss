@@ -1,12 +1,13 @@
 $color-nav: $color-dark;
 
-nav:not(.sticky) {
+/*nav:not(.sticky) {
   max-width: 1040px;
-}
+}*/
 nav.sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    max-width: $article-width-max;
+    width:100%;
     border-radius: 0px;
   }
 
@@ -19,7 +20,7 @@ nav {
   overflow: hidden;
   line-height: #{$nav-height};
   //max-width: 1100px;
-  border-radius: 5px;
+  //border-radius: 5px;
   border-bottom: 2px solid lighten($color-nav, 30%);
   border-right: 2px solid lighten($color-nav, 30%);
   margin: auto;

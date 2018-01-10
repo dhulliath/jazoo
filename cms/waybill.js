@@ -1,10 +1,10 @@
 {
 	description: {
 		$doc_type: 'textarea',
-		doc: 'You can type in the details of your shipment into any green section, and print this page as a waybill!\n\nYou can also just print this page as it for a blank waybill.\n\nThe green parts will not print.\n\nFor best results, we recommend enabling Background Graphics, and Narrow margins in Microsoft Edge.',
+		doc: 'Here is our company waybill, this gives the client the ability to fill in their own details of the shipment they plan on sending with Jazoo. \n\nPlease fill in the these sections of the waybill, this will provide Jazoo with the correct instructions for the delivery requested. \n\n* Contact Name\n* Contact Location\n* Billed To\n* Date \n* Number of Packages \n* Delivery From \n* Delivery To (City & Address Location)\n\nNote* The green parts on this waybill below will print out clearly. But when printing this out remember to scale to fit and narrow margins so it prints properly.',
 		$abstracted_content_hidden: true,
 		abstracted_content: {
-			marked_doc: '<p>You can type in the details of your shipment into any green section, and print this page as a waybill!</p>\n<p>You can also just print this page as it for a blank waybill.</p>\n<p>The green parts will not print.</p>\n<p>For best results, we recommend enabling Background Graphics, and Narrow margins in Microsoft Edge.</p>\n',
+			marked_doc: '<p>Here is our company waybill, this gives the client the ability to fill in their own details of the shipment they plan on sending with Jazoo. </p>\n<p>Please fill in the these sections of the waybill, this will provide Jazoo with the correct instructions for the delivery requested. </p>\n<ul>\n<li>Contact Name</li>\n<li>Contact Location</li>\n<li>Billed To</li>\n<li>Date </li>\n<li>Number of Packages </li>\n<li>Delivery From </li>\n<li>Delivery To (City &amp; Address Location)</li>\n</ul>\n<p>Note* The green parts on this waybill below will print out clearly. But when printing this out remember to scale to fit and narrow margins so it prints properly.</p>\n',
 			contents: []
 		}
 	},

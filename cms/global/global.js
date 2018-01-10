@@ -1,10 +1,7 @@
 {
 	site: {
-		title: 'Jazoo Express Courier Ltd'
-	},
-	header: {
-		$image_type: 'image',
-		image: '/remote/direct_uploads/1515106150_IMG_20160525_202912-PANO(1)-2.jpg'
+		title: 'Jazoo Express Courier Ltd',
+		footer: 'Copyright 2017 Jazoo Courier all rights reserved.'
 	},
 	navigation: {
 		$navitem_types_hidden: true,
@@ -16,6 +13,10 @@
 		},
 		$items_templatitator: '@@navigation.navitem_types',
 		items: [
+			{
+				title: 'About',
+				url: '/about/'
+			},
 			{
 				title: 'Services',
 				url: '/services/'

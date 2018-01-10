@@ -16,27 +16,51 @@ header {
     @include viewPrinter() {
         display: none;
     }
+    svg {
+      fill: $color-accent;
+    }
+}
+
+main {
+    max-width: $article-width-max;
+    margin: auto;
+    @include depthShade(15px, 10, rgba(0, 0, 0, 0.25));
 }
 
 article {
-    max-width: #{$article-width-max - (2 * $gutters)};
+    //max-width: #{$article-width-max - (2 * $gutters)};
     margin: auto;
     background-color: rgba($color-light, 0.9);
     padding: $gutters;
     //min-height: calc(100vh - #{$nav-height} - #{$header-height} - #{$gutters * 2});
 }
 
+footer {
+    min-height: 140px;
+    
+    color: darken($color-light, 25%);
+    line-height: 160px;
+    * {
+        max-width: $view-tablet-threshold;
+        margin: auto;
+        vertical-align: bottom;
+    }
+}
+
 .pagebg {
     position: fixed;
-    z-index: 0;
+    z-index: -10;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     filter: blur(5px);
-    * {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(/assets/img/background.jpg);
+    /** {
         object-fit: cover;
-    }
+    }*/
     @include viewPrinter() {
         display: none;
     }

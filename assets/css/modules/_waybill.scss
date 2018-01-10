@@ -29,21 +29,29 @@
     }
     tbody {
         tr {
-            height: 2em;
+            &, td, th {
+                height: 2em;
+            }
         }
         tr:empty {
             height: 0.5em;
         }
         tr.row-double {
-            height: 4em;
+            &, td, th {
+                height: 4em;
+            }
         }
         tr.row-quad {
-            height: 8em;
+            &, td, th {
+                height: 8em;
+            }
         }
         tr.row-hex {
             height: 12em;
         }
-
+        td[rowspan="2"] {
+            height: 4em;
+        }
         td, th {
             border: 1px solid #000;
         }

@@ -1,46 +1,56 @@
 $color-nav: $color-dark;
+body {}
 
-body {
-    
+main {
+    height: 100%;
+    width: 100%;
 }
 
-.pagebg {
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    div {
-        object-fit: cover;
-        background: linear-gradient(135deg, darken(#ffd700, 0%), darken($color-accent, 15%));
-        height:100%;
-        width: 100%;
-    }
-}
-
-article {
+section {
     position: relative;
     z-index: 1;
     color: white;
     font-size: 1em;
     padding: 1em;
-    text-align: center;
+    text-align: center; //max-width: $view-tablet-threshold;
+    header {
+        font-size: 2.1em;
+    }
+    div {
+        margin: auto;
+        max-width: $view-tablet-threshold;
+        margin-bottom:60px;
+    }
     svg {
-        stroke: $color-accent;
+        stroke: white;
         stroke-width: 0.5;
-        fill: url(#truckFillGradient);
+        fill: white;
+        max-width: 300px;
+    }
+    &:nth-child(odd) {
+        background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
+        min-height: 50vh;
+        //padding-bottom: 40px;
+    }
+    &:nth-child(even) {
+        background: linear-gradient(135deg, $color-dark 40%, lighten($color-dark, 25%) 41%, lighten($color-dark, 20%) 45%, $color-dark 46%);
+        border-top: 2px solid lighten($color-dark, 22%);
+        min-height: calc(50vh - 70px);    
     }
 }
 
 nav {
-    background-color: $color-nav;
-    overflow: hidden;
-    line-height: #{$nav-height};
-    position: relative;
+    position: absolute;
+    top: -60px;
     max-width: $view-mobile-threshold;
-    margin: auto;
-    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $color-nav;
+    line-height: #{$nav-height};
+    width: 100%;
+    border-radius: 15px;
+    display: block;
     a {
         display: block;
         color: white;
@@ -50,7 +60,7 @@ nav {
         font-size: 18px;
         float: none;
         border: 1px solid $color-nav;
-        border-radius: 5px;
+        border-radius: 10px;
     }
     a:hover {
         background-color: $color-nav;

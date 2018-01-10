@@ -9,6 +9,8 @@ $article-width-max: 900px;
 
 @import 'modules/colors';
 @import 'modules/mediaq';
+@import 'modules/depthshading';
+
 
 @import 'modules/body_main';
 
@@ -16,6 +18,6 @@ $article-width-max: 900px;
 
 @import 'modules/locations';
 @import 'modules/font';
-@import 'modules/depthshading';
+
 @import 'modules/waybill';
 @import 'modules/contacts';

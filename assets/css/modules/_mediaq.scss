@@ -1,5 +1,5 @@
 $view-mobile-threshold: 600px;
-$view-tablet-threshold: 992px;
+$view-tablet-threshold: 900px;
 
 @mixin viewTablet() {
     @media screen and (max-width: $view-tablet-threshold) {

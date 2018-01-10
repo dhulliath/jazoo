@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{global.site.title}}</title>
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="x-apple-disable-message-reformatting">
-        <meta name="robots" content="noindex" />
-    </head>
-    <body>
-        <div class="pagebg">
-            <img src="/assets/img/header.jpg">
-        </div>
-        <header>
-            <span>
+
+<head>
+    <title>{{global.site.title}}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="robots" content="noindex" />
+</head>
+
+<body>
+    <div class="pagebg">
+    </div>
+    <header>
+        <span>
                 {{global.site.title}}
             </span>
-        </header>
+    </header>
+    <main>
         <nav>
             <a href="/">
                 <svg viewBox="0 0 66.145832 30.427085">
@@ -23,14 +25,22 @@
                 </svg>
             </a>
             {{#each global.navigation.items}}
-            <a href="{{url}}">{{title}}</a>
-            {{/each}}
+            <a href="{{url}}">{{title}}</a> {{/each}}
             <a href="javascript:void();" class="icon">&#9776;</a>
         </nav>
         <article>
-{{>@partial-block}}
+            {{>@partial-block}}
         </article>
-        <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
-{{!-- <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
-    </body>
+        
+    </main>
+    <footer>
+        <div>
+            {{global.site.footer}}
+        </div>
+    </footer>
+    <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+    {{!--
+    <script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script> --}}
+</body>
+
 </html>
