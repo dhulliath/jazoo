@@ -2,13 +2,24 @@
 	$regionlist_hidden: true,
 	regionlist: {
 		british_columbia: {
-			region: 'BC'
+			region: 'BC',
+			full: 'British Columbia'
 		},
 		alberta: {
-			region: 'AB'
+			region: 'AB',
+			full: 'Alberta'
 		},
 		saskatchewan: {
-			region: 'SK'
+			region: 'SK',
+			full: 'Saskatchewan'
+		},
+		manitoba: {
+			region: 'MB',
+			full: 'Manitoba'
+		},
+		ontario: {
+			region: 'ON',
+			full: 'Ontario'
 		}
 	},
 	$location_type_hidden: true,
@@ -22,7 +33,7 @@
 			address: {
 				address: '',
 				city: '',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: ''
 			},
 			$contact_size: 4,
@@ -50,7 +61,7 @@
 			address: {
 				address: '',
 				city: '',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: ''
 			},
 			$contact_size: 4,
@@ -108,7 +119,7 @@
 			address: {
 				address: 'Bay 9 1435 40 Avenue NW',
 				city: 'Calgary',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: 'T2E 8N6'
 			},
 			$contact_size: 4,
@@ -136,7 +147,7 @@
 			address: {
 				address: '4525 101 Street NW',
 				city: 'Edmonton',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: 'T6E5C6'
 			},
 			$contact_size: 4,
@@ -164,7 +175,7 @@
 			address: {
 				address: '7701 Resources Road',
 				city: 'Grande Prairie',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: 'T8V 0N1'
 			},
 			$contact_size: 4,
@@ -193,7 +204,7 @@
 			address: {
 				address: '355 MacAlpine Crescent',
 				city: 'Fort McMurray',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: 'T9H 4Y4'
 			},
 			$contact_size: 4,
@@ -222,7 +233,7 @@
 			address: {
 				address: '6740 Johnstone Drive',
 				city: 'Red Deer',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: 'T4P 3Y2'
 			},
 			$contact_size: 4,
@@ -251,7 +262,7 @@
 			address: {
 				address: 'PO Box 12525',
 				city: 'Lloydminster',
-				region: '@@regionlist.alberta',
+				region: '@@global.regionlist.alberta',
 				postal_code: ''
 			},
 			$contact_size: 4,

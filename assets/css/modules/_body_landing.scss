@@ -1,4 +1,6 @@
 $color-nav: $color-dark;
+
+
 body {}
 
 main {
@@ -33,7 +35,7 @@ section {
         //padding-bottom: 40px;
     }
     &:nth-child(even) {
-        background: linear-gradient(135deg, $color-dark 40%, lighten($color-dark, 25%) 41%, lighten($color-dark, 20%) 45%, $color-dark 46%);
+        background: linear-gradient(135deg, $color-dark 35%, lighten($color-dark, 25%) 36%, lighten($color-dark, 20%) 40%, $color-dark 41%);
         border-top: 2px solid lighten($color-dark, 22%);
         min-height: calc(50vh - 70px);    
     }
@@ -69,6 +71,8 @@ nav {
         font-size: 18px;
         float: none;
         border: 1px solid $color-nav;
+        /*border-left-color: $color-nav;
+        border-right-color: $color-nav;*/
         //border-radius: 10px;
     }
     a:hover, a:active {

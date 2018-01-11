@@ -19,11 +19,16 @@ article {
 }
 
 footer {
+    position: relative;
     min-height: 140px;
     
     color: darken($color-light, 25%);
-    line-height: 160px;
-    * {
+    font-size: 0.8em;
+    span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         max-width: $view-tablet-threshold;
         margin: auto;
         vertical-align: bottom;
