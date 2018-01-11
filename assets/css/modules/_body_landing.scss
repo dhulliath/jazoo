@@ -1,7 +1,17 @@
 $color-nav: $color-dark;
 
+/*#color1:first-child, .color-accent {
+    stop-color: $color-accent;
+}
+.color-accent-dark {stop-color: darken($color-accent, 15%);}*/
 
-body {}
+
+body {
+    background-color: $color-accent;
+    background-image:url(/assets/img/bg-landing.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main {
     height: 100%;
@@ -30,7 +40,7 @@ section {
         max-width: 300px;
     }
     &:nth-child(odd) {
-        background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
+        //background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
         min-height: 50vh;
         //padding-bottom: 40px;
     }
