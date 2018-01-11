@@ -13,14 +13,20 @@
         </filter>
     </defs>
     <style>
-
+        .back {
+            fill: url(#color1);
+        }
+        .ray {
+            fill: url(#color2);
+            filter: url(#blurry);
+        }
     </style>
     <g id="bg">
-        <path d="M 0 0 L 100 0 L 0 100 Z" fill="url(#color1)" />
-        <path d="M 0 0 L 100 100 L 100 0 Z" fill="url(#color1)" />
-        <path d="M 50 100 L 0 0 L 100 0 Z" fill="url(#color1)" />
-        <path d="M 0 0 L 50 100 L 25 100 Z" fill="url(#color2)" filter="url(#blurry)" />
-        <path d="M 0 0 L 100 50 L 100 25 Z" fill="url(#color2)" filter="url(#blurry)" />
-        <path d="M 0 0 L 75 100 L 100 100 L 100 75 Z" fill="url(#color2)" filter="url(#blurry)" />
+        <path class="back" d="M 0 0 L 100 0 L 100 100 L 0 100 Z" />
+        <path class="back" d="M 0 0 L 100 100 L 100 0 Z" />
+        <path class="back" d="M 50 100 L 0 0 L 100 0 Z" />
+        <path class="ray" d="M 0 0 L 50 100 L 25 100 Z" />
+        <path class="ray" d="M 0 0 L 100 50 L 100 25 Z" />
+        <path class="ray" d="M 0 0 L 75 100 L 100 100 L 100 75 Z" />
     </g>
 </svg>
