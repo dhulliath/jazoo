@@ -13,7 +13,7 @@ main {
 article {
     //max-width: #{$article-width-max - (2 * $gutters)};
     margin: auto;
-    background-color: rgba($color-light, 0.9);
+    background-color: rgba($color-light, 0.95);
     padding: $gutters;
     //min-height: calc(100vh - #{$nav-height} - #{$header-height} - #{$gutters * 2});
 }

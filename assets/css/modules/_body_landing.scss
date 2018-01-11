@@ -38,9 +38,9 @@ section {
     }
     &:nth-child(odd) {
         background-color: $color-accent;
-    background-image:url(/assets/img/bg-landing.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+        background-image:url(/assets/img/bg-landing.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
         //background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
         min-height: 50vh;
         //padding-bottom: 40px;
