@@ -21,5 +21,15 @@ require(['jquery'], function ($) {
 				$('nav').removeClass('sticky');
 			}
 		})
+
+		var waybillElements = ['contactName', 'contactLocation', 'billedTo', 'date', 'deliveryFrom', 'deliveryTo', 'itemCount', 'itemDescription'];
+		for (elementID in waybillElements) {
+			$('.waybillInputs').append("<input type=\"text\" id=\""+waybillElements[elementID]+"\" placeholder=\""+waybillElements[elementID]+"\" />");
+			$('input#'+waybillElements[elementID]).change(function(event) {
+				//var localID = $(this).attr('id');
+				var newVal = $('input#'+event.target.id).val();
+				$('td#'+event.target.id).text(newVal);
+			})
+		}
 	})
 })
