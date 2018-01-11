@@ -7,10 +7,7 @@ $color-nav: $color-dark;
 
 
 body {
-    background-color: $color-accent;
-    background-image:url(/assets/img/bg-landing.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: black;
 }
 
 main {
@@ -40,11 +37,18 @@ section {
         max-width: 300px;
     }
     &:nth-child(odd) {
+        background-color: $color-accent;
+    background-image:url(/assets/img/bg-landing.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
         //background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
         min-height: 50vh;
         //padding-bottom: 40px;
     }
     &:nth-child(even) {
+        position: absolute;
+        left: 0;
+        right: 0;
         background: linear-gradient(135deg, $color-dark 35%, lighten($color-dark, 25%) 36%, lighten($color-dark, 20%) 40%, $color-dark 41%);
         border-top: 2px solid lighten($color-dark, 22%);
         min-height: calc(50vh - 70px);    
