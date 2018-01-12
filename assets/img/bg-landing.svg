@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" version="1.1" id="background">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" version="1.1" id="background">
     <defs>
-        <linearGradient id="color1" x1="0%" x2="100%" y1="0%" y2="0%" gradientTransform="rotate(45)">
+        <linearGradient id="c" x1="0%" x2="100%" y1="0%" y2="0%" gradientTransform="rotate(45)">
             <stop offset="0%" stop-color="black" stop-opacity="0" />
             <stop offset="100%" stop-color="black" stop-opacity="0.1" />
         </linearGradient>
     </defs>
     <style>
-        .back {
-            fill: url(#color1);
+        #bg * {
+            fill: url(#c);
         }
     </style>
     <g id="bg">
-        <path class="back" d="M 0 0 L 100 0 L 100 100 L 0 100 Z" />
-        <path class="back" d="M 0 0 L 100 100 L 100 0 Z" />
-        <path class="back" d="M 50 100 L 0 0 L 100 0 Z" />
+        <path d="M0 0L4 0L4 4L0 4Z" />
+        <path d="M0 0L4 4L4 0Z" />
+        <path d="M2 4L0 0L4 0Z" />
     </g>
 </svg>

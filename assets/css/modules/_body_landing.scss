@@ -1,10 +1,5 @@
 $color-nav: $color-dark;
-
-/*#color1:first-child, .color-accent {
-    stop-color: $color-accent;
-}
-.color-accent-dark {stop-color: darken($color-accent, 15%);}*/
-
+$landing-color-foreground: #bbb;
 
 body {
     background: black;
@@ -18,10 +13,10 @@ main {
 section {
     position: relative;
     z-index: 1;
-    color: white;
+    color: $landing-color-foreground;
     font-size: 1em;
     padding: 1em;
-    text-align: center; //max-width: $view-tablet-threshold;
+    text-align: center; 
     header {
         font-size: 2.1em;
     }
@@ -29,27 +24,30 @@ section {
         margin: auto;
         max-width: $view-tablet-threshold;
         margin-bottom:60px;
+        color: $landing-color-foreground;
     }
     svg {
-        stroke: white;
-        stroke-width: 0.5;
-        fill: white;
+        /*stroke: white;
+        stroke-width: 0.5;*/
+        fill: $landing-color-foreground;
         max-width: 300px;
+    }
+    header {
+        color: $landing-color-foreground;
     }
     &:nth-child(odd) {
         background-color: $color-accent;
         background-image:url(/assets/img/bg-landing.svg);
         background-size: cover;
         background-repeat: no-repeat;
-        //background: linear-gradient(135deg, $color-accent, darken($color-accent, 15%)); //padding-bottom: 50px;
         min-height: 50vh;
-        //padding-bottom: 40px;
     }
     &:nth-child(even) {
         position: absolute;
         left: 0;
         right: 0;
-        background: linear-gradient(135deg, $color-dark 35%, lighten($color-dark, 25%) 36%, lighten($color-dark, 20%) 40%, $color-dark 41%);
+        background: linear-gradient(135deg, lighten($color-dark, 10%), $color-dark);
+        //background: linear-gradient(135deg, $color-dark 35%, lighten($color-dark, 25%) 36%, lighten($color-dark, 20%) 40%, $color-dark 41%);
         border-top: 2px solid lighten($color-dark, 22%);
         min-height: calc(50vh - 70px);    
     }
@@ -62,10 +60,8 @@ nav {
     left: 0;
     right: 0;
     margin: 0 auto;
-    //background-color: $color-nav;
     line-height: #{$nav-height};
     width: 100%;
-    //border-radius: 15px;
     display: block;
     :first-child {
         border-top-left-radius: 15px;
@@ -85,9 +81,6 @@ nav {
         font-size: 18px;
         float: none;
         border: 1px solid $color-nav;
-        /*border-left-color: $color-nav;
-        border-right-color: $color-nav;*/
-        //border-radius: 10px;
     }
     a:hover, a:active {
         background-color: $color-nav;

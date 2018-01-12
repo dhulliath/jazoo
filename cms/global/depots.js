@@ -173,35 +173,6 @@
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: '7701 Resources Road',
-				city: 'Grande Prairie',
-				region: '@@global.regionlist.alberta',
-				postal_code: 'T8V 0N1'
-			},
-			$contact_size: 4,
-			$contact_noframe: true,
-			contact: {
-				phone: '1-587-297-8406',
-				email: 'gp.operations@jazoocourier.com'
-			},
-			$details_size: 4,
-			$details_noframe: true,
-			details: {
-				depot_host: 'Maxim Self Storage',
-				$depot_hidden: true,
-				depot: 'depot',
-				show_in_waybill: true,
-				show_in_contacts: true,
-				show_in_locations: true
-			}
-		},
-		{
-			$title_size: 12,
-			$title_type: 'title',
-			title: 'Dropoff',
-			$address_size: 4,
-			$address_noframe: true,
-			address: {
 				address: '355 MacAlpine Crescent',
 				city: 'Fort McMurray',
 				region: '@@global.regionlist.alberta',
@@ -231,25 +202,25 @@
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: '6740 Johnstone Drive',
-				city: 'Red Deer',
+				address: '7701 Resources Road',
+				city: 'Grande Prairie',
 				region: '@@global.regionlist.alberta',
-				postal_code: 'T4P 3Y2'
+				postal_code: 'T8V 0N1'
 			},
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '1-403-660-5504',
-				email: ''
+				phone: '1-587-297-8406',
+				email: 'gp.operations@jazoocourier.com'
 			},
 			$details_size: 4,
 			$details_noframe: true,
 			details: {
-				depot_host: 'U-Store-It',
+				depot_host: 'Maxim Self Storage',
 				$depot_hidden: true,
 				depot: 'depot',
-				show_in_waybill: false,
-				show_in_contacts: false,
+				show_in_waybill: true,
+				show_in_contacts: true,
 				show_in_locations: true
 			}
 		},
@@ -275,6 +246,35 @@
 			$details_noframe: true,
 			details: {
 				depot_host: 'Lloydminster Storage Ltd',
+				$depot_hidden: true,
+				depot: 'depot',
+				show_in_waybill: false,
+				show_in_contacts: false,
+				show_in_locations: true
+			}
+		},
+		{
+			$title_size: 12,
+			$title_type: 'title',
+			title: 'Dropoff',
+			$address_size: 4,
+			$address_noframe: true,
+			address: {
+				address: '6740 Johnstone Drive',
+				city: 'Red Deer',
+				region: '@@global.regionlist.alberta',
+				postal_code: 'T4P 3Y2'
+			},
+			$contact_size: 4,
+			$contact_noframe: true,
+			contact: {
+				phone: '1-403-660-5504',
+				email: ''
+			},
+			$details_size: 4,
+			$details_noframe: true,
+			details: {
+				depot_host: 'U-Store-It',
 				$depot_hidden: true,
 				depot: 'depot',
 				show_in_waybill: false,
