@@ -4,29 +4,15 @@
             <stop offset="0%" stop-color="black" stop-opacity="0" />
             <stop offset="100%" stop-color="black" stop-opacity="0.1" />
         </linearGradient>
-        <linearGradient id="color2" gradientTransform="rotate(75)">
-            <stop offset="0%" stop-color="white" stop-opacity="0.15" />
-            <stop offset="100%" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <filter id="blurry">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="0.25" />
-        </filter>
     </defs>
     <style>
         .back {
             fill: url(#color1);
-        }
-        .ray {
-            fill: url(#color2);
-            filter: url(#blurry);
         }
     </style>
     <g id="bg">
         <path class="back" d="M 0 0 L 100 0 L 100 100 L 0 100 Z" />
         <path class="back" d="M 0 0 L 100 100 L 100 0 Z" />
         <path class="back" d="M 50 100 L 0 0 L 100 0 Z" />
-        <path class="ray" d="M 0 0 L 50 100 L 25 100 Z" />
-        <path class="ray" d="M 0 0 L 100 50 L 100 25 Z" />
-        <path class="ray" d="M 0 0 L 75 100 L 100 100 L 100 75 Z" />
     </g>
 </svg>
