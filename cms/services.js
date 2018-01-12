@@ -11,7 +11,11 @@
 		contact: {
 			name: '',
 			phone: '',
-			email: ''
+			email: '',
+			$abstracted_content_hidden: true,
+			abstracted_content: {
+				email_break: ''
+			}
 		}
 	}
 }

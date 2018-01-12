@@ -10,7 +10,7 @@ abstractor.prototype.abstract = function (context) {
         const regex_replace = '@';
         context['$abstracted_content_hidden'] = true
         context.abstracted_content = {}
-        content.abstracted_content.email_break = context.email.replace(regex_replace, ' @')
+        context.abstracted_content.email_break = context.email.replace(regex_replace, ' @')
         return resolve()
     })
 }

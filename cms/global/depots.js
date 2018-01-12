@@ -40,7 +40,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '',
-				email: ''
+				email: '',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: ''
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -68,7 +72,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '',
-				email: ''
+				email: '',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: ''
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -94,7 +102,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '',
-				email: ''
+				email: '',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: ''
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -126,7 +138,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-403-660-5504',
-				email: 'calgary.operations@jazoocourier.com'
+				email: 'calgary.operations@jazoocourier.com',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: 'calgary.operations @jazoocourier.com'
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -154,7 +170,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-780-903-3628',
-				email: 'edmonton.operations@jazoocourier.com'
+				email: 'edmonton.operations@jazoocourier.com',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: 'edmonton.operations @jazoocourier.com'
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -182,7 +202,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-587-645-6364',
-				email: 'fortmac.operations@jazoocourier.com'
+				email: 'fortmac.operations@jazoocourier.com',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: 'fortmac.operations @jazoocourier.com'
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -211,7 +235,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-587-297-8406',
-				email: 'gp.operations@jazoocourier.com'
+				email: 'gp.operations@jazoocourier.com',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: 'gp.operations @jazoocourier.com'
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -240,7 +268,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-780-903-3628',
-				email: ''
+				email: '',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: ''
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -269,7 +301,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-403-660-5504',
-				email: ''
+				email: '',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: ''
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
@@ -295,7 +331,11 @@
 			$contact_noframe: true,
 			contact: {
 				phone: '1-403-771-5031',
-				email: 'accounting@jazoocourier.com'
+				email: 'accounting@jazoocourier.com',
+				$abstracted_content_hidden: true,
+				abstracted_content: {
+					email_break: 'accounting @jazoocourier.com'
+				}
 			},
 			$details_size: 4,
 			$details_noframe: true,
