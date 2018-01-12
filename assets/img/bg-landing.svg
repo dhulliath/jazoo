@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" version="1.1" id="background">
-    <defs>
-        <linearGradient id="c" x1="0%" x2="100%" y1="0%" y2="0%" gradientTransform="rotate(45)">
-            <stop offset="0%" stop-color="black" stop-opacity="0" />
-            <stop offset="100%" stop-color="black" stop-opacity="0.1" />
-        </linearGradient>
-    </defs>
-    <style>
-        #bg * {
-            fill: url(#c);
-        }
-    </style>
-    <g id="bg">
-        <path d="M0 0L4 0L4 4L0 4Z" />
-        <path d="M0 0L4 4L4 0Z" />
-        <path d="M2 4L0 0L4 0Z" />
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" id="background"><defs><linearGradient id="c" x1="0%" y1="0%" y2="0%" gradientTransform="rotate(45)"><stop offset="0%" stop-opacity="0"/><stop offset="100%" stop-opacity=".1"/></linearGradient></defs><style>#bg *{fill:url(#c)}</style><g id="bg"><path d="M0 0h4v4H0z"/><path d="M0 0l4 4V0z"/><path d="M2 4L0 0h4z"/></g></svg>
