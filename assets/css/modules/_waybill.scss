@@ -131,6 +131,9 @@ $waybill-row-height: 0.55cm;
     .page-header, header, footer {
         display: none;
     }
+    input,textarea {
+        outline: 0;
+    }
 }
 @media screen {
     .wbill {
