@@ -1,7 +1,9 @@
+$background-blur-amount: 5px;
+$background-overscale: 0 - ($background-blur-amount * 2);
+
 body {
     margin: 0;
-    background: white; //background: linear-gradient(45deg, $color-accent, darken($color-accent, 15%));
-    //background-repeat: repeat;
+    background: white; 
 }
 
 main {
@@ -11,11 +13,9 @@ main {
 }
 
 article {
-    //max-width: #{$article-width-max - (2 * $gutters)};
     margin: auto;
     background-color: rgba($color-light, 0.95);
     padding: $gutters;
-    //min-height: calc(100vh - #{$nav-height} - #{$header-height} - #{$gutters * 2});
 }
 
 footer {
@@ -35,20 +35,21 @@ footer {
     }
 }
 
+.spacer {
+    height: 2em;
+}
+
 .pagebg {
     position: fixed;
     z-index: -10;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(5px);
+    left: $background-overscale;
+    top: $background-overscale;
+    right: $background-overscale;
+    bottom: $background-overscale;
+    filter: blur($background-blur-amount);
     background-size: cover;
     background-repeat: no-repeat;
     background-image:url(/assets/img/background.jpg);
-    /** {
-        object-fit: cover;
-    }*/
     @include viewPrinter() {
         display: none;
     }

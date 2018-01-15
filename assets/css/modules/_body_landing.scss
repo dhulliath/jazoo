@@ -45,6 +45,13 @@ section {
         min-height: 50vh;
         font-family: 'Libre Baskerville', serif;
         font-size: 1.175em;
+        hr {
+            border-color: #eee;
+            max-width: $view-mobile-threshold; 
+        }
+        div {
+            margin-top:2em;
+        }
     }
     &:nth-child(even) {
         position: absolute;
