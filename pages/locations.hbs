@@ -3,7 +3,7 @@
 <span itemprop="name" content="Jazoo Express Courier Ltd"></span>
 <span itemprop="url" content="http://www.jazoocourier.com/"></span>
 <a name="locations"></a>
-    <div class="header">Locations</div>
+    <div class="header" style="margin-bottom: 0.5em;">Locations</div>
     {{#each global.depots}}
     {{#if details.warehouse}}
     {{#if details.show_in_locations}}
@@ -13,7 +13,7 @@
             <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="streetAddress">{{address.address}}</span><br/>
                 <span itemprop="addressLocality">{{address.city}}</span>,
-                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
+                <span itemprop="addressRegion">{{address.region.full}}</span><br/>
                 <span itemprop="postalCode">{{address.postal_code}}</span>
                 <span itemprop="addressCountry" content="CA"></span>
             </div>
@@ -27,9 +27,9 @@
     {{/if}}
     {{/if}}
     {{/each}}
-
+    <hr/>
     <a name="depots"></a>
-    <div class="header">Depots</div>
+    <div style="margin-top: 1em;margin-bottom: 0.5em;" class="header">Depots</div>
     {{#each global.depots}}
     {{#if details.depot}}
     {{#if details.show_in_locations}}
@@ -40,7 +40,7 @@
             <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="streetAddress">{{address.address}}</span><br/>
                 <span itemprop="addressLocality">{{address.city}}</span>,
-                <span itemprop="addressRegion">{{address.region.region}}</span><br/>
+                <span itemprop="addressRegion">{{address.region.full}}</span><br/>
                 <span itemprop="postalCode">{{address.postal_code}}</span>
                 <span itemprop="addressCountry" content="CA"></span>
             </div>

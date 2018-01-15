@@ -129,7 +129,7 @@
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: 'Bay 9 1435 40 Avenue NW',
+				address: 'Bay 9, 1435 - 40 Avenue NW',
 				city: 'Calgary',
 				region: '@@global.regionlist.alberta',
 				postal_code: 'T2E 8N6'
@@ -161,7 +161,7 @@
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: '4525 101 Street NW',
+				address: '4525 - 101 Street NW',
 				city: 'Edmonton',
 				region: '@@global.regionlist.alberta',
 				postal_code: 'T6E5C6'
