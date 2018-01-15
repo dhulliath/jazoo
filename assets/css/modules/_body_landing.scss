@@ -1,5 +1,5 @@
 $color-nav: $color-dark;
-$landing-color-foreground: #bbb;
+$landing-color-foreground: #fff;
 
 body {
     background: black;
@@ -22,13 +22,13 @@ section {
     }
     div {
         margin: auto;
-        max-width: $view-tablet-threshold;
+        max-width: $view-mobile-threshold;
         margin-bottom:60px;
+        text-align: center;
+        text-align-last: center;
         color: $landing-color-foreground;
     }
     svg {
-        /*stroke: white;
-        stroke-width: 0.5;*/
         fill: $landing-color-foreground;
         max-width: 300px;
     }
@@ -36,11 +36,13 @@ section {
         color: $landing-color-foreground;
     }
     &:nth-child(odd) {
-        background-color: $color-accent;
+        background-color: darken($color-accent, 17%);
         background-image:url(/assets/img/bg-landing.svg);
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 50vh;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.175em;
     }
     &:nth-child(even) {
         position: absolute;
