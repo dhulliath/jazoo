@@ -1,5 +1,4 @@
 $waybill-row-height: 0.55cm;
-
 .wbill {
     border-spacing: 0px;
     border-collapse: separate;
@@ -32,7 +31,9 @@ $waybill-row-height: 0.55cm;
     }
     tbody {
         tr {
-            &, td, th {
+            &,
+            td,
+            th {
                 height: $waybill-row-height;
             }
         }
@@ -40,12 +41,16 @@ $waybill-row-height: 0.55cm;
             height: 0.1cm;
         }
         tr.row-double {
-            &, td, th {
+            &,
+            td,
+            th {
                 height: $waybill-row-height * 2;
             }
         }
         tr.row-quad {
-            &, td, th {
+            &,
+            td,
+            th {
                 height: $waybill-row-height * 4;
             }
         }
@@ -55,21 +60,20 @@ $waybill-row-height: 0.55cm;
         td[rowspan="2"] {
             height: $waybill-row-height * 2;
         }
-        td, th {
+        td,
+        th {
             border: 1px solid #000;
         }
         th:not(.deco-b) {
             font-weight: normal;
         }
-
         th {
-            background-color:#ddd;
+            background-color: #ddd;
         }
         td {
             background-color: #fff;
             overflow: hidden;
         }
-
         border: 1px solid #000;
     }
     .billheader {
@@ -99,24 +103,18 @@ $waybill-row-height: 0.55cm;
         size: A4 portrait;
         margin: 10mm 25mm 0mm 25mm;
     }
-    /*:not(.wbill) {
-        visibility: hidden;
-    }*/
     .wbill {
-        //visibility: visible;
         display: table;
         position: absolute;
         font-size: 0.3cm;
         max-height: 25.94cm;
         overflow: hidden;
+        input,
+        textarea {
+            outline: none;
+            border: none;
+        }
     }
-    /*:not(.wbill) {
-        display: none;
-    }*/
-    /*html, body, main, article {
-        display: block !important;
-        padding: 0;
-    }*/
     body {
         background-color: #fff;
         margin: 0;
@@ -128,19 +126,18 @@ $waybill-row-height: 0.55cm;
         padding: 0;
     }
     nav,
-    .page-header, header, footer {
+    .page-header,
+    header,
+    footer {
         display: none;
     }
-    input,textarea {
-        outline: 0;
-    }
 }
+
 @media screen {
     .wbill {
-        //display: none;
-        input, textarea {
+        input,
+        textarea {
             outline: 2px greenyellow solid;
         }
     }
 }
-
