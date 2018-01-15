@@ -1,5 +1,5 @@
 {
-    navigation: {
+	navigation: {
 		$navitem_types_hidden: true,
 		navitem_types: {
 			item: {
@@ -20,6 +20,10 @@
 			{
 				title: 'Locations',
 				url: '/locations/'
+			},
+			{
+				title: 'Rates',
+				url: '/rates/'
 			},
 			{
 				title: 'Services',
