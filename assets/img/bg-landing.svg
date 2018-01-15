@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" id="background"><defs><linearGradient id="c" x1="0%" y1="0%" y2="0%" gradientTransform="rotate(45)"><stop offset="0%" stop-opacity="0"/><stop offset="100%" stop-opacity=".1"/></linearGradient></defs><style>#bg *{fill:url(#c)}</style><g id="bg"><path d="M0 0h4v4H0z"/><path d="M0 0l4 4V0z"/><path d="M2 4L0 0h4z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4" id="background">
+    <defs>
+        <linearGradient id="c" x1="0%" y1="0%" y2="0%" gradientTransform="rotate(45)">
+            <stop offset="0%" stop-color="#000000" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#68982f" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    <style>
+        #bg * {
+            fill: url(#c)
+        }
+    </style>
+    <g id="bg">
+        <path d="M0 0h4v4H0z" />
+        <path d="M0 0l4 4V0z" />
+        <path d="M2 4L0 0h4z" />
+    </g>
+</svg>
