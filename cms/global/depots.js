@@ -330,7 +330,7 @@
 			$contact_size: 4,
 			$contact_noframe: true,
 			contact: {
-				phone: '1-403-771-5031',
+				phone: '1-403-701-6699',
 				email: 'accounting@jazoocourier.com',
 				$abstracted_content_hidden: true,
 				abstracted_content: {
