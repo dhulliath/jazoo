@@ -20,6 +20,10 @@
 		ontario: {
 			region: 'ON',
 			full: 'Ontario'
+		},
+		quebec: {
+			region: 'QC',
+			full: 'Quebec'
 		}
 	},
 	$location_type_hidden: true,
