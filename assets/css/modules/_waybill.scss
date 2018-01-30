@@ -96,6 +96,19 @@ $waybill-row-height: 0.525cm;
     .dispatches span:not(:first-child)::before {
         content: " // ";
     }
+    .dispatch {
+        span {
+            &:nth-child(2n) {
+                &::before {
+                    content: ' // ';
+                }
+                &::after {
+                    content: "\A";
+                    white-space: pre;
+                }
+            }
+        }
+    }
 }
 
 @media print {

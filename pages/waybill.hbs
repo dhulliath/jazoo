@@ -142,15 +142,14 @@
             <tr>
                 <td colspan="6">
                     To request a hot shot please contact dispatch at the city nearest you:
-                    {{#grouped_each 2 dispatches}}
-                    <div class="dispatches">
-                        {{#each this}}
-                        <span>
-                            <u>{{name}} {{phone}}</u>
-                        </span>
-                        {{/each}}
+                    <div class="dispatch">
+                    {{#each global.depots}}
+                        {{#if details.show_in_waybill}}
+                        <span><u>{{address.city}} {{contact.phone}}</u></span>
+                        {{/if}}
+                    {{/each}}
                     </div>
-                    {{/grouped_each}}
+            
                 </td>
             </tr>
             <tr>
