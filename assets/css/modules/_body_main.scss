@@ -1,9 +1,14 @@
 $background-blur-amount: 5px;
 $background-overscale: 0 - ($background-blur-amount * 2);
+$background-url: url(/assets/img/background.jpg);
 
 body {
     margin: 0;
-    background: white; 
+    background: white;
+    background-image:url(/assets/img/background.jpg); 
+    @include viewPrinter() {
+        background-image: none;
+    }
 }
 
 main {

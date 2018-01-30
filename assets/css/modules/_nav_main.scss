@@ -13,6 +13,9 @@ nav.sticky {
 
 .sticky + article {
   padding-top: 80px;
+  @include viewPrinter() {
+    padding-top: 0px;
+  }
 }
 
 nav {
