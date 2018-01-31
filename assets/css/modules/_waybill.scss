@@ -1,4 +1,4 @@
-$waybill-row-height: 0.525cm;
+$waybill-row-height: 0.51cm;
 .wbill {
     border-spacing: 0px;
     border-collapse: separate;
@@ -98,14 +98,12 @@ $waybill-row-height: 0.525cm;
     }
     .dispatch {
         span {
-            &:nth-child(2n) {
-                &::before {
-                    content: ' // ';
-                }
-                &::after {
-                    content: "\A";
-                    white-space: pre;
-                }
+            &:nth-child(2n+1)::after {
+                content: ' // ';
+            }
+            &:nth-child(2n)::after {
+                content: "\A";
+                white-space: pre;
             }
         }
     }
