@@ -133,7 +133,7 @@
 			$address_size: 4,
 			$address_noframe: true,
 			address: {
-				address: 'Bay 9, 1435 - 40 Avenue NW',
+				address: 'Bay 9, 1435 - 40 Avenue NE',
 				city: 'Calgary',
 				region: '@@global.regionlist.alberta',
 				postal_code: 'T2E 8N6'
