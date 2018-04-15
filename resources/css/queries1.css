@@ -1,0 +1,377 @@
+@media only screen and (max-width: 1500px) {
+    /*Section: INDEX*/
+    body {
+        font-size: 22px;
+    }
+    .logo {
+        margin-left: 5%;
+        height: 60px;
+        width: 120px;
+        margin-top: 40px;
+    }
+    h1 {
+        font-size: 500%;
+    }
+    h1:after {
+        width: 210px;
+    }
+    .hero-text-box p {
+        font-size: 120%;
+    }
+
+    .hero-text-box {
+        margin-top: 5%;
+    }
+    p {
+        font-size: 100%;
+    }
+    .headings-other {
+        font-size: 170%
+    }
+    .main-nav {
+        margin-right: 5%;
+    }
+    .about {
+        height: 100%;
+    }
+    .rates {
+        height: 110%;
+    }
+    
+    .footer-waybill {
+        margin-top: 10%;
+    }
+    /*Section: SERVICES*/
+}
+
+@media only screen and (max-width: 1200px) {
+    /*Section: INDEX*/
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .logo {
+        margin-left: 5%;
+        height: 60px;
+        width: 120px;
+        margin-top: 35px;
+    }
+    .headings-other {
+        font-size: 200%;
+    }
+    .main-nav {
+        margin-right: 5%;
+    }
+    .main-nav li {
+        margin-left: 30px;
+    }
+    header {
+        height: 100%;
+    }
+    .about {
+        height: 60%;
+    }
+    footer {
+        bottom: 0;
+    }
+    .footer-contact {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .footer-services-location {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .footer-other {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    /*Section: SERVICES*/
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    /*Section: INDEX*/
+    body {
+        font-size: 80%;
+    }
+    section {
+        padding: 60px 0;
+    }
+    header {
+        height: 100%;
+    }
+    .about {
+        height: 60%;
+    }
+    .logo {
+        height: 40px;
+        width: 100px;
+        margin-top: 35px;
+    }
+    .main-nav {
+        margin-top: 10px;
+    }
+
+    .footer-other {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    .footer-contact {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+     .footer-services-location {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    /*Section: SERVICES*/
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    /*Section: INDEX*/
+    body {
+        font-size: 70%;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    .main-nav {
+        display: none;
+        margin-left: 65%;
+        margin-top -50%;
+        background-color: rgba(0, 0, 0, 0.95);
+        border: 1px solid #94ca53;
+        z-index: 2;
+        position: fixed;
+    }
+    .main-nav li {
+        display: block;
+        margin-top: 20px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        margin-right: 25px;
+        border: 0;
+        font-size: 100%;
+        text-align: center;
+        margin-top: 20%;
+    }
+    .hero-text-box {
+        width: 475px;
+    }
+    .headings-other{
+        font-size: 200%;
+    }
+    header {
+        height: 100%;
+    }
+    .about {
+        height: 60%;
+    }
+    h1 {
+        font-size: 600%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 110%;
+    }
+    footer {
+        bottom: 0;
+    }
+    .footer-other {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+
+}
+
+
+@media only screen and (max-width: 601px) {
+    /*Section: INDEX*/
+    .hero-text-box {
+        width: 500px;
+    }
+    .jazoo-logo1 {
+        margin-left: 50%;
+    }
+    .footer-services-location {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .footer-other {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+    }
+    footer {
+        bottom: 0;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    /*Section: INDEX*/
+    section {
+        padding: 25px 0;
+    }
+    .main-nav {
+        margin-left: 61%;
+        margin-top: 20%;
+    }
+    .hero-text-box {
+        width: 350px;
+        margin-left: 0;
+    }
+    .hero-text-box p {
+        font-size: 110%;
+    }
+    .about {
+        height: 100%;
+    }
+    .jazoo-logo1 {
+        margin-left: 29%;
+        margin-top: -18px;
+    }
+    .thank-you {
+        margin-left: 55%;
+    }
+    .headings-other {
+        font-size: 190%;
+    }
+    .main-title {
+        font-size: 400%;
+    }
+    h1:after {
+        width: 40%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .hero-text-box p {
+        margin-top: 20px;
+    }
+    footer {
+        bottom: 0;
+    }
+    .calgary,
+    .edmonton,
+    .fort-mcmurray,
+    .grande-prairie,
+    .lloydminster,
+    .red-deer {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .calgary_row,
+    .fort-mcmurray-row,
+    .lloydminster-row {
+        width: 50%;
+         margin-left: auto;
+        margin-right: auto;
+    }
+    .edmonton_row,
+    .grande-prairie-row,
+    .red-deer-row {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .red-deer-row {
+        margin-top: -35px;
+    }
+    .footer-other {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+    .footer-services-location {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: relative;
+    }
+    .btn-full-w:link,
+    .btn-full-w:visited {
+        margin-left: 13%;
+    }
+    .p-about {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-contact {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    /*Section: INDEX*/
+    .about {
+        height: 103%;
+    }
+     .headings-other {
+        font-size: 170%%;
+    }
+    footer {
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*Section: INDEX*/
+    body {
+        font-size: 50%;
+    }
+     .headings-other {
+        font-size: 170%%;
+    }
+    .about {
+        height: 110%;
+    }
+    .jazoo-logo1 {
+        margin-left: 20%;
+    }
+    footer {
+        bottom: 0;
+    }
+}
